@@ -21,3 +21,13 @@ name = input("enter the name")
 length = len(name)
 print("it has" + " "  + str(length) + " " + "characters")
 print(f"it has {length} characters")
+
+
+# Swapping
+a = 10
+b = 5
+print(f"Original values a: {a}, b:{b}")
+c = a
+a = b
+b = c
+print(f"Swapped values a: {a}, b: {b}")
