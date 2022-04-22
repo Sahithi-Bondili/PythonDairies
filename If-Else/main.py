@@ -6,6 +6,12 @@ if graduationPercentage >= 75 :
 else :
  print("sorry you are not elligbile.please try for a different position")
 
+# Even/Odd
+number = int(input("which no do you want to check"))
+if (number % 2) == 1 :
+  print("This is an odd number")
+else : 
+  print("This is an even number")
 
 # Validate the rider based on age
 height = float(input("Enter the height")) 
