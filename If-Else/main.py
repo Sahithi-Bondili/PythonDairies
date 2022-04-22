@@ -1,3 +1,25 @@
+# candidate validation for Interview Call based of Cut-off graduation percentage
+graduationPercentage = float(input("Enter the graduation percentage"))
+if graduationPercentage >= 75 :
+ print("your interview is scheduled on next monday")
+ print("please bring one gov id along with you")
+else :
+ print("sorry you are not elligbile.please try for a different position")
+
+
+# Validate the rider based on age
+height = float(input("Enter the height")) 
+if height > 120 :
+  print("can ride")
+else :
+  print("can't ride")
+number = int(input("which no do you want to check"))
+if (number % 2) == 1 :
+  print("This is an odd number")
+else : 
+  print("This is an even number")
+
+
 #Age validator to vote using If-Else
 adharNumber = input("please enter  your adharnumber")
 length = len(adharNumber)
