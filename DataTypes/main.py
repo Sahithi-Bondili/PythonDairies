@@ -1,4 +1,14 @@
 # String Concatination
+firstName = input("Enter first name")
+lastName = input("Enter last name")
+dateOfBirth = input("Enter date of birth")
+gender = input("Enter the gender")
+address = input("Enter the Address")
+print("Hi" + " " + firstName + lastName + "How are you?")
+print("We will send you Birthday gift to you on" + " " +  dateOfBirth) 
+print("please find the gift at" + " " + address)
+
+
 # f-string
 firstName = "sowmya"
 lastName = "bondili"
