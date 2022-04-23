@@ -52,15 +52,5 @@ if height > 120 :
    else :
     print("ticket price is 7")
 else :
-  print("can't ride")height = float(input("Enter the height")) 
-if height > 120 :
-   print("can ride")
-   age = int(input("enter your age"))
-   if age > 18 :
-    print("ticket price is 12")
-   elif age > 12 :
-    print("ticket price is 9")
-   else :
-    print("ticket price is 7")
-else :
   print("can't ride")
+ 
