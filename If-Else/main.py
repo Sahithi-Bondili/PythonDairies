@@ -19,11 +19,7 @@ if height > 120 :
   print("can ride")
 else :
   print("can't ride")
-number = int(input("which no do you want to check"))
-if (number % 2) == 1 :
-  print("This is an odd number")
-else : 
-  print("This is an even number")
+
 
 
 #Age validator to vote using If-Else
