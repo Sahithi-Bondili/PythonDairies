@@ -20,3 +20,31 @@ else:
       break
     elif num == i:
       print(str(num) + " is prime")
+
+# Least Frequent character 
+s1 = input("Enter the test:")
+for i in s1:
+  cnt = s1.count(i)
+  if cnt == 1:
+    print(i)
+    
+# Factorial- using for
+num = int(input("Enter one number:"))
+fac = 1
+for i in range(1,num + 1):
+ fac = fac*i
+print("factorial of", num, "is", fac )
+
+# Factorial- using while
+#num = int(input("enter a number: "))
+#fac = 1
+#i = 1
+#while i <= num:
+ # fac = fac * i
+#  i = i + 1
+#print("factorial of ", num, " is ", fac)
+
+
+
+
+
