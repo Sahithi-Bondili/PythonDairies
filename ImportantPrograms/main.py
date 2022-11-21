@@ -36,13 +36,13 @@ for i in range(1,num + 1):
 print("factorial of", num, "is", fac )
 
 # Factorial- using while
-#num = int(input("enter a number: "))
-#fac = 1
-#i = 1
-#while i <= num:
- # fac = fac * i
-#  i = i + 1
-#print("factorial of ", num, " is ", fac)
+num = int(input("enter a number: "))
+fac = 1
+i = 1
+while i <= num:
+  fac = fac * i
+  i = i + 1
+print("factorial of ", num, " is ", fac)
 
 
 
