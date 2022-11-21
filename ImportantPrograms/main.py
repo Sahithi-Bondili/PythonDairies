@@ -44,6 +44,23 @@ while i <= num:
   i = i + 1
 print("factorial of ", num, " is ", fac)
 
+# Calculate words count in a string
+s = "bcdef\nabcdefg\nbcde\nbcdef"
+words = s.split("\n")
+unique = []
+wordCnt = []
+for i in words:
+  #print(i)
+  if i in unique:
+    idx = unique.index(i)
+    wordCnt[idx] = wordCnt[idx]+1
+  else:
+    unique.append(i)
+    wordCnt.append(1)
+print(len(unique))
+x,y,z = wordCnt
+print(x,y,z)
+
 
 
 
