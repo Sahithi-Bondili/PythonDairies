@@ -62,6 +62,26 @@ x,y,z = wordCnt
 print(x,y,z)
 
 
+#decarator Function
+def decFun(i):
+  def innerFun():
+    instituteName = input("Enter your institute name:")
+    name = (instituteName.upper())
+    if name == 'VCUBE' :
+      return i ()
+    else :
+      return("We don't have that info")
+  return innerFun
+  
+@decFun
+def getAddress ():
+  return ''' ADDRESS: 2nd Floor, 
+         above Rayamond's KPHB Phase 1,
+         Kukatpally, HYD.'''
+address = getAddress()
+print(address)
+
+
 
 
 
