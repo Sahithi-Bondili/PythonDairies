@@ -82,6 +82,17 @@ address = getAddress()
 print(address)
 
 
+# triangle pattern in python by  using function
+def drawPattern(a):
+  output = []
+  for i in range(1,a+1):
+    output.append(str(i))
+    print(" ".join(output))
+                  
+number = int(input("Enter a number:"))
+res = drawPattern(number)
+print(res)
+
 
 
 
