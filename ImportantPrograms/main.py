@@ -93,6 +93,25 @@ number = int(input("Enter a number:"))
 res = drawPattern(number)
 print(res)
 
+#Mobile recharge function in by using dictionery
+def validateAndRecharge(plan):
+  if plan in trendingOffers.keys():
+    print("Your mobile number is succesfully recharged with " + str(plan) + ". Plan Details: " + trendingOffers[plan])
+  else:
+    print("please select the plan mentiond above")
+
+number = input("Enter the mobile number:")
+plan1 = "validity: 365days,Data:2.5GB per day"
+plan2 = "validity:90 days,Data:2GB per day"
+plan3 = "validity:84 days,Data:2GB per day"
+plan4 ="validity:28 days,Data:2GB per day"
+trendingOffers = {2999 : plan1, 749 : plan2, 719 : plan3, 299 : plan4 }
+for i in trendingOffers:
+  print(str(i) + "-" + trendingOffers[i]) 
+  
+selectedPlan = int(input("choose a plan listed above: "))
+validateAndRecharge(selectedPlan)
+
 
 
 
