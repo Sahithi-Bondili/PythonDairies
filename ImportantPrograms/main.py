@@ -113,5 +113,19 @@ selectedPlan = int(input("choose a plan listed above: "))
 validateAndRecharge(selectedPlan)
 
 
+# leapYear
+def leapYear(year):
+   if year % 4 == 0: 
+    return True
+   elif (year % 100 == 0 and year % 400 == 0):
+     return True
+   else:
+    return False
+
+ res = leapYear(1990)
+ print(res)
+
+
+
 
 
