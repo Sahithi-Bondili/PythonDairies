@@ -126,6 +126,49 @@ def leapYear(year):
  print(res)
 
 
+#DrinkPrime Programme
+from datetime import date
+
+class DeviceDetails:
+  def __init__(self,id,liters,validity):
+    self.liters = liters
+    self.validity = validity
+    self.id = id
+    
+class DPChecker:
+  def getDevice(self, id):
+      for device in self.allDevices:
+        if(device.id == id):
+          return device
+    
+  def checkLitersAndValidity(self, device):
+     if device.liters == 0:
+       print("No more liters left,please top-up")
+     elif device.validity < today :
+       print("The validity is expired,Please recharge")
+     else:
+       print("Tank full")
+       
+  device1 = DeviceDetails(id = "Device1", liters = 45, validity = date.fromisoformat('2022-12-24'))
+  device2 = DeviceDetails(id = "Device2", liters = 45, validity = date.fromisoformat('2022-11-24'))
+  device3 = DeviceDetails(id = "Device3", liters = 0, validity = date.fromisoformat('2022-12-24'))
+  device4 = DeviceDetails(id = "Device4", liters = 45, validity = date.fromisoformat('2022-12-24'))
+  device5 = DeviceDetails(id = "Device5", liters = 45, validity = date.fromisoformat('2022-12-24'))
+
+  allDevices = [device1, device2, device3, device4, device5]
+
+today = date.today()
+d = date.fromisoformat('2022-12-24')
+deviceId = input("Enter Device Id: ")
+dp = DPChecker()
+device = dp.getDevice(deviceId)
+if(device != None):
+  dp.checkLitersAndValidity(device)
+else:
+  print("Could not find the device at this moment. Kindly check the device and try again :)")
+
+
+
 
 
 
