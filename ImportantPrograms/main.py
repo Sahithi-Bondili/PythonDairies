@@ -168,6 +168,26 @@ else:
   print("Could not find the device at this moment. Kindly check the device and try again :)")
 
 
+#import Exmaple
+import evenOdd
+def primeNumber(num):
+    if 2 == num:
+        print("is a prime number")
+    elif evenOdd.evenodd(num) == "evennumber":
+        print("is not a prime number")
+    else:
+         for i in range(3,num+1):
+            if (num% i== 0) and num != i:
+               print(str(num) + "is not a prime")
+               break
+            elif num == i:
+              print(str(num)+ "is a prime")
+
+num = int(input("Enter a number:"))
+res = primeNumber(num)
+print(res)
+
+
 
 
 
